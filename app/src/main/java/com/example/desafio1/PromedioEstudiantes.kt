@@ -39,7 +39,7 @@ class PromedioEstudiantes : AppCompatActivity() {
                 }
                 else
                 {
-                    binding.aprobado.text= "no has aprobado perro"
+                    binding.aprobado.text= "Has reprobado el curso"
                 }
                 binding.promedioTextView.text = "El promedio de $nombre es: %.2f  ".format(prom)
             } else {
