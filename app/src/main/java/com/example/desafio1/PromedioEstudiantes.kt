@@ -1,5 +1,6 @@
 package com.example.desafio1
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -23,8 +24,9 @@ class PromedioEstudiantes : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun calcular() {
-        val nombre = binding.nombre.text.toString()
+        val nombre: String = binding.nombre.text.toString()
         val nota1 = binding.nota1.text.toString().toDoubleOrNull()
         val nota2 = binding.nota2.text.toString().toDoubleOrNull()
         val nota3 = binding.nota3.text.toString().toDoubleOrNull()
