@@ -13,6 +13,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnCalculadora.setOnClickListener {
+            val intent = Intent(this, Calculadora::class.java)
+            startActivity(intent)
+        }
+        binding.btnPromedioEstudiantes.setOnClickListener {
+            val intent = Intent(this, PromedioEstudiantes::class.java)
+            startActivity(intent)
+        }
+        binding.btnDescuentoSalario.setOnClickListener {
+            val intent = Intent(this, DescuentoSalario::class.java)
+            startActivity(intent)
+            }
 
-    }
+        }
 }
